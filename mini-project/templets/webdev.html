@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cortex</title>
+  <link rel="icon" type="image/x-icon" href="/static/img/ito.ico">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <style>
+
+.container,.imgcontainer{
+  background-color: white;
+}
+
+    ul li,
+    a {
+      text-decoration: none;
+      padding-left: 10px;
+      font-size: large;
+      list-style: none;
+
+    }
+    .footer{
+  padding-top: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #c5d9ec;
+ 
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px}
+    
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="navbar-img">
+      <img src="/static/img/pradeep.jpg" alt="">
+
+    </div>
+    <div class="navbar-link">
+      <ul>
+        <li><a href="/templets/index.html"> home</a> </li>
+
+
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-btn">Service</a>
+          <div class="dropdown-menu">
+            <a href="/templets/webdev.html">web development</a>
+            <a href="/templets/python.html">python project</a>
+           
+          </div>
+        </li>
+
+        <li><a href="/templets/contact.html"> contact us </a> </li>
+        <li><a href="/templets/about.html"> about us</a> </li>
+      </ul>
+    </div>
+    <div class="navbar-log">
+
+    </div>
+    <!-- Button to open the modal login form -->
+    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+    </div>
+
+  </nav>
+
+
+
+  <!-- The Modal -->
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+      title="Close Modal">&times;</span>
+
+    <!-- Modal Content -->
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <img style="width: 150px;" src="/static/img/pradeep.jpg" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+          class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+
+
+
+  <div class="container" style="border: 2px solid gray; ">
+    <h1>Web Development</h1>
+    <pre> development is the process of building and maintaining websites and web applications. It involves a range of skills and technologies, including HTML, CSS, JavaScript, 
+  and various web frameworks and tools. A web developer's primary goal is to create user-friendly and visually appealing websites that meet the needs of their clients or 
+  </pre>
+  </div>
+
+
+  <h1 style="text-align: center; color: cornflowerblue;">Welcome  here</h1>
+
+  <div class="slider">
+    <input type="radio" name="toggle" id="btn-1" checked>>
+    <input type="radio" name="toggle" id="btn-2" checked>
+    <input type="radio" name="toggle" id="btn-3">
+
+    <div class="slider-controls">
+      <label for="btn-1"></label>
+      <label for="btn-2"></label>
+      <label for="btn-3"></label>
+    </div>
+
+    <ul class="slides">
+      <li class="slide">
+        <div class="slide-content">
+          <h2 class="slide-title">HTML</h2>
+          <p class="slide-text">HTML (Hypertext Markup Language) is the standard language used for creating web
+            pages. It provides the basic structure and content of a webpage, including headings, paragraphs, images,
+            links, and more. By mastering HTML,
+            coders can build responsive and visually appealing web pages that are easily accessible to users on any
+            device.</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="slide-link">Learn more</a>
+        </div>
+        <p class="slide-image">
+          <img src="/static/img/html.jpg" alt="stuff" width="420" height="340">
+        </p>
+      </li>
+      <li class="slide">
+        <div class="slide-content">
+          <h2 class="slide-title">CSS</h2>
+          <p class="slide-text">CSS (Cascading Style Sheets) is a language used to describe the visual appearance and
+            layout of web pages. It
+            allows coders to style and position HTML elements, create animations and effects, and make pages responsive
+            to
+            different screen sizes. By using CSS, coders can enhance the user experience and create visually stunning
+            web
+            pages.</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="slide-link">Watch Now</a>
+        </div>
+        <p class="slide-image">
+          <img src="/static/img/css.jpg" alt="stuff" width="420" height="340">
+        </p>
+      </li>
+      <li class="slide">
+        <div class="slide-content">
+          <h2 class="slide-title">JavaScript</h2>
+          <p class="slide-text">JavaScript is a high-level programming language used for adding interactivity and
+            dynamic functionality to web
+            pages. It allows coders to manipulate the content and behavior of web pages, respond to user actions, and
+            interact with external APIs and databases. By mastering JavaScript, coders can create engaging and
+            responsive
+            web pages that provide a seamless user experience</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/javascript" class="slide-link">Get started</a>
+        </div>
+        <p class="slide-image">
+          <img src="/static/img/javascript.jpg" alt="stuff" width="420" height="340">
+        </p>
+      </li>
+    </ul>
+  </div>
+  <h3 style="text-align: center; padding: 40px;"> Here is the code of the the above carusle .Now you can also try it </h3>
+
+  <p class="codepen" data-height="500" data-default-tab="html,result" data-slug-hash="XWxRJvQ" data-user="Choudhary-Sab" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+    <span>See the Pen <a href="https://codepen.io/Choudhary-Sab/pen/XWxRJvQ">
+    Untitled</a> by Choudhary Sab (<a href="https://codepen.io/Choudhary-Sab">@Choudhary-Sab</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+
+  <h3 style="text-align: center; padding: 40px; color:gray"> from the toady you got the daily updates regarsthe web development </h3>
+
+
+
+
+
+
+
+
+
+  <footer class="footer">
+
+    <div class="foot">
+
+      <a href="#" class="footer-logo">Cortex</a>
+      <p  class="copyright">
+        <small>&copy; 2019</small>
+      </p>
+
+
+    </div>
+
+    <div class="foot">
+      <h3>Customers</h3>
+      <ul>
+        <li>Buyer</li>
+        <li>Supplier</li>
+      </ul>
+    </div>
+
+
+    <div class="foot">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="/templets/about.html">About us</a></li>
+        <li><a href="/templets/resume.html">Careers</a></li>
+        <li><a href="/templets/contact.html">Contact us</a></li>
+      </ul>
+    </div>
+
+
+    <div class="foot">
+      <h3>Further Information</h3>
+      <ul>
+        <li>Terms &amp; Conditions</li>
+        <li>Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="foot">
+      <h3>Follow us</h3>
+      <ul>
+        <li><a href="#">twitter</a></li>
+        <li><a href="#">FACEBOOK</a></li>
+        <li><a href="#">linkedin</a></li>
+        
+      </ul>
+    </div>
+    </div>
+
+  </footer>
+
+
+  
+ </body>
+ </html>

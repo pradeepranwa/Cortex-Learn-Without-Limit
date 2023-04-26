@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cortex</title>
+  <link rel="icon" type="image/x-icon" href="/static/img/ito.ico">
+  <link rel="stylesheet" href="/static/css/style.css">
+
+
+  <style>
+
+.container,.imgcontainer{
+  background-color: white;
+}
+    .first-int {
+      display: flex;
+      padding-top: 60px;
+      font-size: larger;
+      text-align: center;
+    }
+
+    .first-int div,
+    .first-int img {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 75px;
+    }
+
+    .button a {
+      display: block;
+      text-decoration: none;
+      border: 1px solid black;
+
+      width: 250px;
+      height: 55px;
+      padding-top: 10px;
+    }
+
+    .batch {
+      width: 70%;
+      text-align: center;
+      background-color: #f6faff;
+      margin-left: 15%;
+      margin-top: 5%;
+      background-image: solid black;
+
+    }
+
+    .newbatch {
+      margin-top: 100px;
+      display: flex;
+      background-color: #e1e5e7a6;
+      background-image: url("static/img/backgroundimg.png");
+      color: rgb(0, 0, 0);
+    }
+
+    ul li,
+    a {
+      text-decoration: none;
+      padding-left: 10px;
+      font-size: large;
+      list-style: none;
+
+    }
+
+
+    a:hover {
+      font-size: larger;
+      background-color: #4e5764;
+      color: #f1f1f1;
+
+    }
+
+    .newbatch ul {
+      padding-top: 70px;
+    }
+
+    .review {
+      border: 1px solid rgba(255, 255, 255, 0.866);
+      border-top-right-radius: 40px;
+      padding-top: 100px;
+      background-color: rgb(238 246 255);
+
+    }
+
+    .reviewfirst {
+      border: 1px solid rgb(224, 210, 210);
+      width: 155px;
+      border-radius: 30px;
+
+      padding-left: 14px;
+    }
+
+
+
+
+    .footer {
+      padding-top: 50px;
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-around;
+      background-color: #c5d9ec;
+
+      border-bottom-right-radius: 20px;
+      border-top-left-radius: 20px
+    }
+
+    .join_now {
+      border:2px solid rgb(212, 196, 196);
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 50px;
+      padding-top: 100px;
+      font-family: Helvetica;
+      font-size: large;
+
+    }
+
+    .join_now button {
+
+      width: 173px;
+      height: 54px;
+      border-radius: 30px;
+    }
+
+    button:hover {
+      background-color: #141d2a;
+    }
+    .CURRICULUM{
+      padding-top: 60px;
+      font-size: large;
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .roadmap img,.roadmap
+    {background-color: 
+      #343853;
+      
+      width: 100%;
+
+    }
+    .faculty{
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
+    .faculty div img{
+
+      width: 30%;
+      border-radius:50%;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+
+
+    <div class="navbar-img">
+      <img src="/static/img/pradeep.jpg" alt="">
+    </div>
+
+    <div class="navbar-link">
+      <ul>
+        <li><a href="/templets/index.html"> home</a> </li>
+
+
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-btn">Service</a>
+          <div class="dropdown-menu">
+            <a href="/templets/webdev.html">web development</a>
+            <a href="/templets/python.html">python project</a>
+
+          </div>
+        </li>
+
+        <li><a href="/templets/contact.html"> contact us </a> </li>
+        <li><a href="/templets/about.html"> about us</a> </li>
+      </ul>
+    </div>
+    <div class="navbar-log">
+
+    </div>
+    <!-- Button to open the modal login form -->
+    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+    </div>
+
+  </nav>
+
+
+
+  <!-- The Modal -->
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+      title="Close Modal">&times;</span>
+
+    <!-- Modal Content -->
+    <form class="modal-content animate" action="/templets/action_page.php">
+      <div class="imgcontainer">
+        <img style="width: 150px;" src="/static/img/pradeep.jpg" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+          class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+
+
+
+
+  <div class="first-int">
+    <div>
+      <h1>Learn without limits</h1>
+      <p>Start, switch, or advance your career with more than 15 courses, Professional Certificates, and degrees from
+        world-class universities and companies.
+
+      </p>
+      <div style="display: flex; justify-content: space-around; padding-top: 60px;">
+        <span class="button"> <a href="" style="color: white;  background-color: #4e5764;;">Join for Free</a> </span>
+        <span class="button"> <a href="/templets/term.html">Try cortex for fun</a></span>
+      </div>
+    </div>
+    <div>
+      <img src="/static/img/backphoto.jpg" alt="">
+
+    </div>
+
+  </div>
+
+
+
+  <div class="batch">
+    <h1>welcome to the cortex world</h1>
+
+
+    <p style="font-size: large;"> Cortex is a leading website that offers comprehensive web
+      development courses to individuals seeking to learn and
+      excel in the field of web development. The website offers a wide range of courses ranging from basic to advanced
+      levels, catering to the needs of beginners and professionals alike. The courses are taught by experienced
+      instructors who have in-depth knowledge of the subject matter and can guide students through the intricacies of
+      web
+      development.</p>
+
+  </div>
+
+  <div class="newbatch">
+
+    <div> <img style="width: 90%;" src="/static/img/backphoto.jpg" alt="">
+    </div>
+
+
+    <div>
+      <h1>Alpha 4.0 Placement Course</h1>
+      <h4>NEW Batch (Java + DSA)</h4>
+
+      <div>
+        <ul style="display: flex;">
+          <li><a href="#review">REVIEWS</a></li>
+          <li><a href="#CURRICULUM">CURRICULUM</a> </li>
+          <li><a href="#aboutpr">INSTRUCTOR</a></li>
+          <li><a href="">FAQs</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <div style="display: flex; justify-content:space-around;  " id="review" class="review">
+    <div>
+      <h2>Our Alphaits Love us 🖤🖤
+      </h2>
+      <ul style="display: flex; justify-content: space-between; width: 150%;">
+
+        <div class="reviewfirst"> 4.86⭐️
+          <div>24K+ STUDENTS</div>
+        </div>
+
+        <div class="reviewfirst">400+ video
+          <div> LECTURES</div>
+        </div>
+
+        <div class="reviewfirst">12+ Hours
+          <div> LIVE SESSIONS</div>
+        </div>
+
+      </ul>
+    </div>
+
+    <div>
+      <h2>OUR STUDENTS ARE SELECTED IN</h2>
+      <ul style="display: flex; padding-top: 50px;">
+        <img  src="/static/img/google.svg" alt="image is not available">
+        <li><img src="/static/img/micrisoft.svg" alt="image is not available"></li>
+       
+      </ul>
+
+    </div>
+  </div>
+
+
+
+  <div class="join_now">
+    <div style="padding-left: 40px;">
+      <h2 style="color: rgb(188, 179, 247);">CODING. THAT'S THE CORTEX.</h2>
+      <h2>Start today</h2>
+      <p>- You are just 3.5 months away from cracking your dream company.</p>
+      <h2>Believe in yourself</h2>
+      <p>- Coding is simple. You just need the right guidance. Follow us and in just 3.5 months you will be
+        Internship/Placement ready for Tech companies.</p>
+      <br><br><br>
+      <button><a style="color: white; font-size: 16px;" href="">JOIN NOW</a></button>
+    </div>
+    <div style="width: 50%;"><img style="width: 100%;" src="/static/img/JOIN_NOW.jpg" alt=""></div>
+
+  </div>
+
+
+
+<h1 style="text-align: center;">all topics</h1>
+  <div class="CURRICULUM" id="CURRICULUM">
+    
+    <div>
+      <li>Flowcharts
+      </li>
+      <li>Variables & Data Types in Java
+      </li>
+      <li>Operators</li>
+      <li>if-else Statements</li>
+      <li>Flow Control (Loops)</li>
+      <li>Patterns
+      </li>
+      <li>Functions & Methods</li>
+      <li>Arrays</li>
+      <li>Sorting Algorithms</li>
+      <li>2D Arrays</li>
+      <li>Strings</li>
+      <li>
+        Bit Manipulation</li>
+      <li>OOPs</li>
+      <li>Recursion</li>
+      <li>Divide & Conquer</li>
+    </div>
+    <div>
+      <li>Backtracking</li>
+      <li>Time & Space Complexity </li>
+      <li>ArrayLists</li>
+      <li>Linked Lists</li>
+      <li>Stacks </li>
+      <li>Queues</li>
+      <li>Greedy Algorithms
+      </li>
+      <li>Binary Trees
+      </li>
+      <li>Binary Search Trees
+      </li>
+      <li>Heaps/Priority Queues
+      </li>
+      <li>Hashing </li>
+      <li>Tries</li>
+      <li>Dynamic Programming</li>
+      <li>Segment Trees</li>
+      <li>Graphs
+      </li>
+    </div>
+  </div>
+
+  <div class="roadmap">
+    <img  src="/static/img/roadmap.jpeg" alt="">
+    <img src="/static/img/roaadmap2.jpeg" alt="">
+
+  </div>
+
+  <div style="padding: 40px;" class="aboutpr" id="aboutpr">
+    <div style="background-color: rgb(244 244 244);">
+        <img style="height: 200px; margin-left: 42%; border-radius: 50%;" src="/static/img/pradeep.jpg" alt="">
+        <h3 style="text-align: center;">PRADEEP Choudhary</h3>
+        <P style="text-align: center; background-color: #f4f4f4;" >Web developer</P>
+        <br>
+        <br><br><br>
+        <div  style="display: flex; justify-content: space-around;" class="about2 o">
+          <div>
+               <img style="width: 200px;
+               height: 50px;" src="/static/img/logo_adobe_express.svg" alt="">
+            <h3>Co-founder, The Cortex</h3></div>
+          <div>
+            <img  style="padding-left: 90px;" src="/static/img/micrisoft.svg" alt="">
+            <h3>Ex-microsoft, Software Engineer</h3></div>
+          <div>
+            <img  style="padding-left: 50px;" src="/static/img/google.svg" alt="">
+            <h3>Google SPS, India</h3> </div>
+        </div>
+      
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer">
+
+    <div class="foot">
+
+      <a href="#" class="footer-logo">Cortex</a>
+      <p  class="copyright">
+        <small>&copy; 2019</small>
+      </p>
+
+
+    </div>
+
+    <div class="foot">
+      <h3>Customers</h3>
+      <ul>
+        <li>Buyer</li>
+        <li>Supplier</li>
+      </ul>
+    </div>
+
+
+    <div class="foot">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="/templets/about.html">About us</a></li>
+        <li><a href="/templets/resume.html">Careers</a></li>
+        <li><a href="/templets/contact.html">Contact us</a></li>
+      </ul>
+    </div>
+
+
+    <div class="foot">
+      <h3>Further Information</h3>
+      <ul>
+        <li>Terms &amp; Conditions</li>
+        <li>Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="foot">
+      <h3>Follow us</h3>
+      <ul>
+        <li><a href="#">twitter</a></li>
+        <li><a href="#">FACEBOOK</a></li>
+        <li><a href="#">linkedin</a></li>
+        
+      </ul>
+    </div>
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>

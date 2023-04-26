@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cortex</title>
+  <link rel="icon" type="image/x-icon" href="/static/img/ito.ico">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .container,.imgcontainer{
+  background-color: white;
+}
+    
+
+    .python,
+
+    .python h2 {
+      width: auto;
+      text-align: center;
+
+      border: 2px solid black;
+
+    }
+
+    .python .project {
+      width: 60%;
+      display: inline-grid;
+      justify-items: start;
+    }
+
+    .project .project h3 {
+      padding-top: 20px;
+    }
+
+    .python p {
+      text-align: left;
+    }
+
+    .python pre {
+      text-align: left;
+      background-color: #141d2a;
+      color: whitesmoke;
+      text-shadow: #141d2a;
+      font-size: large;
+    }
+    ul li,
+    a {
+      text-decoration: none;
+      padding-left: 10px;
+      font-size: large;
+      list-style: none;
+
+    } 
+    .footer{
+  padding-top: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #c5d9ec;
+ 
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px}
+    
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="navbar-img">
+      <img src="/static/img/pradeep.jpg" alt="">
+
+    </div>
+    <div class="navbar-link">
+      <ul>
+        <li><a href="/templets/index.html"> home</a> </li>
+
+
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-btn">Service</a>
+          <div class="dropdown-menu">
+            <a href="/templets/webdev.html">web development</a>
+            <a href="/templets/python.html">python project</a>
+          
+          </div>
+        </li>
+
+        <li><a href="/templets/contact.html"> contact us </a> </li>
+        <li><a href="/templets/about.html"> about us</a> </li>
+      </ul>
+    </div>
+    <div class="navbar-log">
+
+    </div>
+    <!-- Button to open the modal login form -->
+    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+    </div>
+
+  </nav>
+
+
+
+  <!-- The Modal -->
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+      title="Close Modal">&times;</span>
+
+    <!-- Modal Content -->
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <img style="height: 150px;" src="/static/img/pradeep.jpg" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+          class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+
+  <div class="python">
+    <h2>Project 1: Iron Man Jarvis AI Desktop Voice Assistant </h2>
+
+    <div class="project">
+
+      <p>Have you ever wondered how cool it would be to have your own A.I. assistant? Imagine how easier it would be to
+        send
+        emails without typing a single word, doing Wikipedia searches without opening web browsers, and performing many
+        other daily tasks like playing music with the help of a single voice command. In this tutorial, I will teach you
+        how
+        you can make your personal A.I. assistant using Python. </p>
+
+      <br><br>
+      <h3>What can this A.I. assistant do for you?</h3>
+      <p> It can send emails on your behalf.
+      <p> -> It can play music for you.</p>
+      <p> -> It can do Wikipedia searches for you.</p>
+      <p> -> It is capable of opening websites like Google, Youtube, etc., in a web browser.</p>
+      <p> -> It is capable of opening your code editor or IDE with a single voice command.</p>
+      <p>-> Enough talks! Let's start building our own J.A.R.V.I.S. </p>
+      </p>
+
+
+
+
+
+
+      <h3>Starting VS Code</h3>
+      <p> I am going to use the VS Code IDE in this video. Feel free to use any other IDE you are comfortable with.
+        Start a new project and make a file called
+
+
+      <h3> Defining Speak Function
+      </h3>
+      <p> The first and foremost thing for an A.I. assistant is that it should be able to speak. To make our
+        J.A.R.V.I.S. talk, we will make a function called <b>speak()</b> . This function will take audio as
+        an argument, and then it will pronounce it.L̥
+
+      <pre> def speak(audio):
+
+         pass                           #For now, we will write the conditions later. </pre>
+ <p>Now, the next thing we need is audio. We must supply audio so that we can pronounce it using the speak()
+  function we made. We are going to install a module called pyttsx3.</p>
+    <h3>pip install pyttsx3</h3>
+
+
+
+
+<h3>for the full code  you can watch our youtube channel </h3>
+
+<br><br><br>
+
+       <h3>
+        Here  is the source code of the ai project
+       </h3>  
+       <pre>
+        import pyttsx3 #pip install pyttsx3
+import speech_recognition as sr #pip install speechRecognition
+import datetime
+import wikipedia #pip install wikipedia
+import webbrowser
+import os
+import smtplib
+
+engine = pyttsx3.init('sapi5')
+voices = engine.getProperty('voices')
+# print(voices[1].id)
+engine.setProperty('voice', voices[0].id)
+
+
+def speak(audio):
+    engine.say(audio)
+    engine.runAndWait()
+
+
+def wishMe():
+    hour = int(datetime.datetime.now().hour)
+    if hour>=0 and hour<12:
+        speak("Good Morning!")
+
+    elif hour>=12 and hour<18:
+        speak("Good Afternoon!")   
+
+    else:
+        speak("Good Evening!")  
+
+    speak("I am Jarvis Sir. Please tell me how may I help you")       
+
+def takeCommand():
+    #It takes microphone input from the user and returns string output
+
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
+        print("Listening...")
+        r.pause_threshold = 1
+        audio = r.listen(source)
+
+    try:
+        print("Recognizing...")    
+        query = r.recognize_google(audio, language='en-in')
+        print(f"User said: {query}\n")
+
+    except Exception as e:
+        # print(e)    
+        print("Say that again please...")  
+        return "None"
+    return query
+
+def sendEmail(to, content):
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.ehlo()
+    server.starttls()
+    server.login('youremail@gmail.com', 'your-password')
+    server.sendmail('youremail@gmail.com', to, content)
+    server.close()
+
+if __name__ == "__main__":
+    wishMe()
+    while True:
+    # if 1:
+        query = takeCommand().lower()
+
+        # Logic for executing tasks based on query
+        if 'wikipedia' in query:
+            speak('Searching Wikipedia...')
+            query = query.replace("wikipedia", "")
+            results = wikipedia.summary(query, sentences=2)
+            speak("According to Wikipedia")
+            print(results)
+            speak(results)
+
+        elif 'open youtube' in query:
+            webbrowser.open("youtube.com")
+
+        elif 'open google' in query:
+            webbrowser.open("google.com")
+
+        elif 'open stackoverflow' in query:
+            webbrowser.open("stackoverflow.com")   
+
+
+        elif 'play music' in query:
+            music_dir = 'D:\\Non Critical\\songs\\Favorite Songs2'
+            songs = os.listdir(music_dir)
+            print(songs)    
+            os.startfile(os.path.join(music_dir, songs[0]))
+
+        elif 'the time' in query:
+            strTime = datetime.datetime.now().strftime("%H:%M:%S")    
+            speak(f"Sir, the time is {strTime}")
+
+        elif 'open code' in query:
+            codePath = "C:\\Users\\Haris\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            os.startfile(codePath)
+
+        elif 'email to harry' in query:
+            try:
+                speak("What should I say?")
+                content = takeCommand()
+                to = "harryyourEmail@gmail.com"    
+                sendEmail(to, content)
+                speak("Email has been sent!")
+            except Exception as e:
+                print(e)
+                speak("Sorry my friend harry bhai. I am not able to send this email")    
+
+       </pre>  
+    </div>
+   
+<br><br><br>
+     <footer class="footer">
+
+  <div class="foot">
+
+    <a href="#" class="footer-logo">Cortex</a>
+    <p  class="copyright">
+      <small>&copy; 2019</small>
+    </p>
+
+
+  </div>
+
+  <div class="foot">
+    <h3>Customers</h3>
+    <ul>
+      <li>Buyer</li>
+      <li>Supplier</li>
+    </ul>
+  </div>
+
+
+  <div class="foot">
+    <h3>Company</h3>
+    <ul>
+      <li><a href="/templets/about.html">About us</a></li>
+      <li><a href="/templets/resume.html">Careers</a></li>
+      <li><a href="/templets/contact.html">Contact us</a></li>
+    </ul>
+  </div>
+
+
+  <div class="foot">
+    <h3>Further Information</h3>
+    <ul>
+      <li>Terms &amp; Conditions</li>
+      <li>Privacy Policy</a></li>
+    </ul>
+  </div>
+
+  <div class="foot">
+    <h3>Follow us</h3>
+    <ul>
+      <li><a href="#">twitter</a></li>
+      <li><a href="#">FACEBOOK</a></li>
+      <li><a href="#">linkedin</a></li>
+      
+    </ul>
+  </div>
+  </div>
+
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cortex</title>
+    <link rel="icon" type="image/x-icon" href="/static/img/ito.ico">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+
+.container,.imgcontainer{
+  background-color: white;
+}
+        .about {
+            padding-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .about img{
+            justify-content: center;
+        }
+
+        .about .aboutpr {
+            width: 47%;
+            border: 2PX solid rgb(234 234 244);
+            display: flex;
+            justify-content: space-between;
+            box-shadow:  6px -7px 8px 2px rgb(234 234 244)
+        }
+
+        .about .aboutks {
+            width: 47%;
+            border: 2PX solidrgb(234 234 244);
+            display: flex;
+            justify-content: space-between;
+            box-shadow:  inset 6px -7px 8px 2px rgb(234 234 244)
+
+        }
+
+        .about div div {
+            width: 45%;
+        }
+about div div 
+        .about div div h3
+        {
+            text-align: center;
+            background-color: #f4f4f4;
+            justify-content: center;
+
+        }
+        .about div div p {
+            text-align: left;
+            
+            justify-content: center;
+
+
+
+        }
+
+        ul li,
+    a {
+      text-decoration: none;
+      padding-left: 10px;
+      font-size: large;
+      list-style: none;
+
+    }
+ .footer {
+      padding-top: 50px;
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-around;
+      background-color: #c5d9ec;
+
+      border-bottom-right-radius: 20px;
+      border-top-left-radius: 20px
+    }
+
+       
+        </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-img">
+            <img src="/static/img/pradeep.jpg" alt="">
+
+        </div>
+        <div class="navbar-link">
+            <ul>
+                <li><a href="/templets/index.html"> home</a> </li>
+
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-btn">Service</a>
+                    <div class="dropdown-menu">
+                        <a href="/templets/webdev.html">web development</a>
+                        <a href="/templets/python.html">python project</a>
+
+                    </div>
+                </li>
+
+                <li><a href="/templets/contact.html"> contact us </a> </li>
+                <li><a href="/templets/about.html"> about us</a> </li>
+            </ul>
+        </div>
+        <div class="navbar-log">
+            
+        </div>
+    <!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+        </div>
+
+    </nav>
+
+
+
+    <!-- The Modal -->
+<div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'"
+  class="close" title="Close Modal">&times;</span>
+  
+    <!-- Modal Content -->
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <img  style="width: 150px;" src="/static/img/pradeep.jpg" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+  
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+
+
+
+
+    <div class="about">
+        <div style="padding: 40px;" class="aboutpr">
+            <div style="background-color: rgb(244 244 244);">
+                <img style="height: 200px; justify-content: center; border-radius: 50%;" src="/static/img/pradeep.jpg" alt="">
+                <h3>PRADEEP Choudhary</h3>
+                <P style="text-align: center; background-color: #f4f4f4;" >Web developer</P>
+                <br>
+                <br><br><br>
+                <h3 style="background-color: black; color: whitesmoke;">follow me</h3>
+            </div>
+            <div>
+                <h3>ABOUT ME</h3>
+                <BR></BR>
+
+                <P>I am a tech-savvy individual with a Bachelor's degree in Software Development, seeking employment as
+                    a mobile game developer. I am passionate about consistently advancing my knowledge and skills. I
+                    have attended multiple seminars and boot camps on coding and game development.</P>
+                    <br>
+                    <br>
+                    
+                    <h3 style="background-color: black; color: whitesmoke;"><img src="/static/img/google.svg" alt="">googel</h3>
+            </div>
+        </div>
+        <div style="padding: 40px;" class="aboutks">
+
+
+            <div style="background-color: rgb(244 244 244);"><img style="height: 200px; justify-content: center; border-radius: 50%;" src="/static/img/kirtan.jpg"
+                    alt="">
+                <H3>KIRTAN SARAN</H3>
+                <P style="text-align: center; border-color: #f4f4f4;">Web developer</P>
+                <br><br><br><br>
+                <h3 style="background-color: black; color: whitesmoke;">follow me</h3>
+
+            </div>
+            <div>
+                <h3>ABOUT ME</h3>
+                <BR></BR>
+
+
+                <P>I am a tech-savvy individual with a Bachelor's degree in Software Development, seeking employment as
+                    a mobile game developer. I am passionate about consistently advancing my knowledge and skills. I
+                    have attended multiple seminars and boot camps on coding and game development.</P>
+                    
+                    <br><br><h3 style="background-color: black; color: whitesmoke;"><img src="/static/img/micrisoft.svg" alt="">microsoft</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+  <div style="padding-top: 40px;"></div>
+
+    <footer class="footer">
+
+
+        <div class="foot">
+
+            <a href="#" class="footer-logo">Cortex</a>
+            <p style="background-color: #141d2a;" class="copyright">
+                <small>&copy; 2019</small>
+            </p>
+
+        </div>
+
+        <div class="foot">
+            <h3>Customers</h3>
+            <ul>
+                <li><a href="#">Buyer</a></li>
+                <li><a href="#">Supplier</a></li>
+            </ul>
+        </div>
+
+
+        <div class="foot">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="/templets/about.html">About us</a></li>
+                <li><a href="/templets/resume.html">Careers</a></li>
+                <li><a href="/templets/contact.html">Contact us</a></li>
+            </ul>
+        </div>
+
+
+        <div class="foot">
+            <h3>Further Information</h3>
+            <ul>
+                <li><a href="/templets/term.html">Terms &amp; Conditions</a></li>
+                <li><a href="/templets/term.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="foot">
+            <h3>Follow us</h3>
+            <ul>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                <li><a href="#"><span class="icon-medium"></span></a></li>
+                <li><a href="#"><span class="icon-paper-plane"></span></a></li>
+            </ul>
+        </div>
+        </div>
+
+    </footer>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        
+        </script>
+</body>
+
+</html>

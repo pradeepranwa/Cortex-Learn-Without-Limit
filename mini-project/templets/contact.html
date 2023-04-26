@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cortex</title>
+  <link rel="icon" type="image/x-icon" href="/static/img/ito.ico">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <style>
+    .container,.imgcontainer{
+  background-color: white;
+}
+
+    ul li,
+    a {
+      text-decoration: none;
+      padding-left: 10px;
+      font-size: large;
+      list-style: none;
+
+    }
+
+    .footer{
+  padding-top: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #c5d9ec;
+ 
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px}
+.click:hover{
+  font-size: larger;
+  background-color: #141d2a;
+  cursor: pointer;
+
+}
+   
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="navbar-img">
+      <img src="/static/img/pradeep.jpg" alt="">
+
+    </div>
+    <div class="navbar-link">
+      <ul>
+        <li><a href="/templets/index.html"> home</a> </li>
+
+
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-btn">Service</a>
+          <div class="dropdown-menu">
+            <a href="/templets/webdev.html">web development</a>
+            <a href="/templets/python.html">python project</a>
+        
+          </div>
+        </li>
+
+        <li><a href="/templets/contact.html"> contact us </a> </li>
+        <li><a href="/templets/about.html"> about us</a> </li>
+      </ul>
+    </div>
+    <div class="navbar-log">
+
+    </div>
+    <!-- Button to open the modal login form -->
+    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+    </div>
+
+  </nav>
+
+
+
+  <!-- The Modal -->
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+      title="Close Modal">&times;</span>
+
+    <!-- Modal Content -->
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <img style="width: 150px;" src="/static/img/pradeep.jpg" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+          class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+
+
+
+  <h2 style="text-align: center;" class="heading mb-4">Let's talk about everything!</h2>
+ <br><br><br><h3>Please ask the your query here </h3> <br>
+ 
+  <div style="display: flex;
+   justify-content:space-around;" class="content">
+
+
+
+    <div class="contact">
+
+     
+      <br>
+      <p><img style="width: 450px;" src="/static/img/css.jpg" alt="Image" class="img-fluid"></p>
+
+
+    </div>
+
+    <div class="contact">
+
+      <form class="mb-5" method="#" id="contactForm" name="contactForm">
+
+
+        <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+
+
+        <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+
+        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+
+        <textarea class="form-control" name="message" id="message" cols="80" rows="7"
+          placeholder="Write your message"></textarea>
+
+        <input class="click" style="width: 100px; height: 30px; color: #ccc;background-color: blueviolet; border-radius: 20px;" type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
+
+      </form>
+
+
+
+
+    </div>
+  </div>
+ <br><br><br><br>
+
+
+
+
+
+
+
+
+ <footer class="footer">
+
+  <div class="foot">
+
+    <a href="#" class="footer-logo">Cortex</a>
+    <p  class="copyright">
+      <small>&copy; 2019</small>
+    </p>
+
+
+  </div>
+
+  <div class="foot">
+    <h3>Customers</h3>
+    <ul>
+      <li>Buyer</li>
+      <li>Supplier</li>
+    </ul>
+  </div>
+
+
+  <div class="foot">
+    <h3>Company</h3>
+    <ul>
+      <li><a href="/templets/about.html">About us</a></li>
+      <li><a href="/templets/resume.html">Careers</a></li>
+      <li><a href="/templets/contact.html">Contact us</a></li>
+    </ul>
+  </div>
+
+
+  <div class="foot">
+    <h3>Further Information</h3>
+    <ul>
+      <li>Terms &amp; Conditions</li>
+      <li>Privacy Policy</a></li>
+    </ul>
+  </div>
+
+  <div class="foot">
+    <h3>Follow us</h3>
+    <ul>
+      <li><a href="#">twitter</a></li>
+      <li><a href="#">FACEBOOK</a></li>
+      <li><a href="#">linkedin</a></li>
+      
+    </ul>
+  </div>
+  </div>
+
+</footer>
+
+
+</body>
+
+</html>
